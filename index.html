@@ -1,0 +1,425 @@
+<html lang="en-US"><head>
+<title>LuaObfuscator - Playground</title>
+<style>
+        html {
+            /* Only here so we don't get a bright white flash while page loads! */
+            background-color: #1e1e1e;
+            color: lightblue;
+        }
+    </style>
+<link rel="stylesheet" href="https://luaobfuscator.com/css/style.css" type="text/css">
+<link rel="stylesheet" href="https://luaobfuscator.com/css/code-lua.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Online Lua Obfuscator. Beautify/Minify/Obfuscate all the lua dialects, including LuaU, gLua, Pluto and vanilla Lua 5.1 (and above).">
+<meta name="keywords" content="Lua Obfuscator, Online Lua Obfuscation, Lua Beautifier, Lua Minifier, Lua deobfuscator, obfuscator, lua, deobfuscation, roblox obfuscator, roblox protection, packer, crypter, lua emulator, FiveM Obfuscator, LuaU beautifier, Luraph beautifier, Pluto Beautifier, LuaU minifier">
+<meta property="og:title" content="Online Lua Obfuscator">
+<meta property="og:image" content="/img/logo.png">
+<meta property="og:description" content="Online Lua Obfuscator. Beautify/Minify/Obfuscate all the lua dialects, including LuaU, gLua, Pluto and vanilla Lua 5.1 (and above).">
+<meta property="og:url" content="https://luaobfuscator.com">
+<link rel="icon" type="image/png" href="/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&amp;family=VT323&amp;display=swap" rel="stylesheet">
+<style type="text/css" id="operaUserStyle"></style></head>
+<body>
+<div class="main-container" style="height: 100% !important">
+<div class="notepad-body">
+
+<div id="home-landing" class="notepad-test" style="display: flex;">
+<div id="home-scroll" class="notepad-script" style="display:block;">
+
+<article id="home-landingpage" class="content-landing" style="display:flex;">
+<div class="home-page-content" style="background: #252525; border-radius: 0% 0% 50% 50% / 10%">
+<a class="home-ribbon" href="https://github.com/sponsors/ferib">Donate on GitHub 🥰</a>
+<div class="home-page-container">
+<div class="home-page-row">
+<div id="fake-progress-bar" style="
+    display: none;
+    width: 80%;
+    z-index: 2;
+    position: relative;
+    height: -120px;
+    top: 105px;
+    height: 0;">
+<div style=" display: flex;
+        position: relative;
+        background-color: var(--color-hover);
+        width: 70%;
+        height: 12px;
+        margin: auto;
+        width: 100%;
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px 0px black;
+        float: left;"><div style="
+        width: 50%;
+        animation-name: fake-loading;
+        animation-iteration-count: infinite;
+        animation-duration: 27s;
+        border-radius: 4px;
+        flex-direction: column;
+        background-color: var(--secondary);
+        position: absolute;
+        height: 100%;"></div>
+</div>
+<span style="display:inline-block">Loading please wait...</span>
+</div>
+<div id="home-lua-actions" class="home-info">
+<h1>Protect your Lua Scripts Today! <span>😎</span></h1>
+<p>You are 2 clicks away from obfuscating your Lua Script! Use the action buttons on the right to select from a wide range of obfuscation features after clicking Upload File or Demo.</p>
+<div class="button-box">
+<div id="btn-demo" style="cursor: pointer;" class="big-pink-btn">New File</div>
+<div id="btn-uploadfile" style="cursor: pointer;" class="big-pink-btn-light">Upload File</div>
+</div>
+<div class="button-box">
+<span id="wait-banner" style="margin-top: 12px; color: indianred; opacity: 0.4; display: none;">Login with Discord for faster access?</span>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="home-page-content" style="padding-bottom: 0">
+<div class="home-page-container">
+
+<div class="img-desktop" style="
+    position: absolute;
+    left: -140px;
+    height: 430px;
+    top: 10px;">
+<img style="    
+        height: 100%;
+        width: 100%;" src="https://luaobfuscator.com/img/cogwheel_a.png" id="cogwheel_a" width="215" height="211">
+</div>
+<div class="img-desktop" style="
+    position: absolute;
+    height: 192px;
+    left: 148px;
+    top: 378px;">
+<img style="
+    height: 100%;
+    width: 100%;" src="./img/cogwheel_b.png" id="cogwheel_b" width="96" height="99">
+</div>
+<div class="home-page-row">
+<div class="home-info" style="
+    width: 80%;
+    margin-right: 30px;">
+<h2 class="big-text-desktop" style="color:var(--primary); float:right;">Say hello to automation 🤖</h2>
+<p style="
+    float: right;
+    text-align: right;">Begin automating your obfuscation requirements today. Get your <a href="/forum/keys">API Key</a> and access our API Docs to initiate your journey.
+</p>
+<div class="button-box" style="justify-content: flex-end;">
+<a href="/forum/docs">
+<div class="big-pink-btn">Read the docs</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="home-page-content" style="
+    background: linear-gradient(180deg,rgb(30 30 30 / 0%) 0%,rgba(0,0,0,1) 100%);
+	padding-bottom: 0;overflow: hidden;">
+<div class="home-page-container">
+<div class="img-desktop" style="
+position: absolute;
+    right: -240px;
+    height: 400px;
+    top: -10px;">
+<img style="
+    height: 100%;
+    width: 100%;" src="https://luaobfuscator.com/img/discord.png" width="300" height="300">
+</div>
+<div class="home-page-row" style="margin-left: 0; filter: saturate(0.8);">
+<div class="home-info">
+<h2 class="big-text-desktop" style="color:var(--primary)">Join the community!</h2>
+<p>Our beloved Discord server may be a thing of the past, but fear not, for we have created a new haven for unrestricted conversation and free expression!</p>
+<div class="button-box" style="justify-content: flex-start; filter: saturate(0.7);">
+<div id="fire-container"><div class="particle" style="left: calc(0% + 0em); animation-delay: 2.25936s;"></div><div class="particle" style="left: calc(1.66667% - 0.0833333em); animation-delay: 0.126483s;"></div><div class="particle" style="left: calc(3.33333% - 0.166667em); animation-delay: 1.68906s;"></div><div class="particle" style="left: calc(5% - 0.25em); animation-delay: 3.53197s;"></div><div class="particle" style="left: calc(6.66667% - 0.333333em); animation-delay: 0.144945s;"></div><div class="particle" style="left: calc(8.33333% - 0.416667em); animation-delay: 2.95908s;"></div><div class="particle" style="left: calc(10% - 0.5em); animation-delay: 0.492762s;"></div><div class="particle" style="left: calc(11.6667% - 0.583333em); animation-delay: 2.61681s;"></div><div class="particle" style="left: calc(13.3333% - 0.666667em); animation-delay: 0.000232564s;"></div><div class="particle" style="left: calc(15% - 0.75em); animation-delay: 2.77547s;"></div><div class="particle" style="left: calc(16.6667% - 0.833333em); animation-delay: 2.07973s;"></div><div class="particle" style="left: calc(18.3333% - 0.916667em); animation-delay: 1.98083s;"></div><div class="particle" style="left: calc(20% - 1em); animation-delay: 3.42315s;"></div><div class="particle" style="left: calc(21.6667% - 1.08333em); animation-delay: 0.334441s;"></div><div class="particle" style="left: calc(23.3333% - 1.16667em); animation-delay: 3.74633s;"></div><div class="particle" style="left: calc(25% - 1.25em); animation-delay: 3.2642s;"></div><div class="particle" style="left: calc(26.6667% - 1.33333em); animation-delay: 1.70954s;"></div><div class="particle" style="left: calc(28.3333% - 1.41667em); animation-delay: 1.75828s;"></div><div class="particle" style="left: calc(30% - 1.5em); animation-delay: 3.5175s;"></div><div class="particle" style="left: calc(31.6667% - 1.58333em); animation-delay: 2.73622s;"></div><div class="particle" style="left: calc(33.3333% - 1.66667em); animation-delay: 1.29125s;"></div><div class="particle" style="left: calc(35% - 1.75em); animation-delay: 0.0989146s;"></div><div class="particle" style="left: calc(36.6667% - 1.83333em); animation-delay: 0.799892s;"></div><div class="particle" style="left: calc(38.3333% - 1.91667em); animation-delay: 3.86318s;"></div><div class="particle" style="left: calc(40% - 2em); animation-delay: 3.30219s;"></div><div class="particle" style="left: calc(41.6667% - 2.08333em); animation-delay: 3.30847s;"></div><div class="particle" style="left: calc(43.3333% - 2.16667em); animation-delay: 2.55687s;"></div><div class="particle" style="left: calc(45% - 2.25em); animation-delay: 1.89316s;"></div><div class="particle" style="left: calc(46.6667% - 2.33333em); animation-delay: 3.0789s;"></div><div class="particle" style="left: calc(48.3333% - 2.41667em); animation-delay: 1.46803s;"></div><div class="particle" style="left: calc(50% - 2.5em); animation-delay: 2.60724s;"></div><div class="particle" style="left: calc(51.6667% - 2.58333em); animation-delay: 3.22598s;"></div><div class="particle" style="left: calc(53.3333% - 2.66667em); animation-delay: 2.97991s;"></div><div class="particle" style="left: calc(55% - 2.75em); animation-delay: 3.37204s;"></div><div class="particle" style="left: calc(56.6667% - 2.83333em); animation-delay: 3.60456s;"></div><div class="particle" style="left: calc(58.3333% - 2.91667em); animation-delay: 1.28596s;"></div><div class="particle" style="left: calc(60% - 3em); animation-delay: 2.4363s;"></div><div class="particle" style="left: calc(61.6667% - 3.08333em); animation-delay: 2.56059s;"></div><div class="particle" style="left: calc(63.3333% - 3.16667em); animation-delay: 1.64628s;"></div><div class="particle" style="left: calc(65% - 3.25em); animation-delay: 3.24616s;"></div><div class="particle" style="left: calc(66.6667% - 3.33333em); animation-delay: 0.376709s;"></div><div class="particle" style="left: calc(68.3333% - 3.41667em); animation-delay: 2.7316s;"></div><div class="particle" style="left: calc(70% - 3.5em); animation-delay: 0.544066s;"></div><div class="particle" style="left: calc(71.6667% - 3.58333em); animation-delay: 1.841s;"></div><div class="particle" style="left: calc(73.3333% - 3.66667em); animation-delay: 2.5208s;"></div><div class="particle" style="left: calc(75% - 3.75em); animation-delay: 0.424055s;"></div><div class="particle" style="left: calc(76.6667% - 3.83333em); animation-delay: 3.80087s;"></div><div class="particle" style="left: calc(78.3333% - 3.91667em); animation-delay: 1.51315s;"></div><div class="particle" style="left: calc(80% - 4em); animation-delay: 2.51925s;"></div><div class="particle" style="left: calc(81.6667% - 4.08333em); animation-delay: 3.17608s;"></div><div class="particle" style="left: calc(83.3333% - 4.16667em); animation-delay: 0.261261s;"></div><div class="particle" style="left: calc(85% - 4.25em); animation-delay: 0.489215s;"></div><div class="particle" style="left: calc(86.6667% - 4.33333em); animation-delay: 1.51847s;"></div><div class="particle" style="left: calc(88.3333% - 4.41667em); animation-delay: 1.1039s;"></div><div class="particle" style="left: calc(90% - 4.5em); animation-delay: 0.68504s;"></div><div class="particle" style="left: calc(91.6667% - 4.58333em); animation-delay: 3.80228s;"></div><div class="particle" style="left: calc(93.3333% - 4.66667em); animation-delay: 1.82052s;"></div><div class="particle" style="left: calc(95% - 4.75em); animation-delay: 0.994584s;"></div><div class="particle" style="left: calc(96.6667% - 4.83333em); animation-delay: 1.86324s;"></div><div class="particle" style="left: calc(98.3333% - 4.91667em); animation-delay: 2.33663s;"></div><div class="particle" style="left: calc(100% - 5em); animation-delay: 3.42868s;"></div><div class="particle" style="left: calc(101.667% - 5.08333em); animation-delay: 1.4408s;"></div><div class="particle" style="left: calc(103.333% - 5.16667em); animation-delay: 2.49264s;"></div><div class="particle" style="left: calc(105% - 5.25em); animation-delay: 0.514477s;"></div><div class="particle" style="left: calc(106.667% - 5.33333em); animation-delay: 0.151431s;"></div><div class="particle" style="left: calc(108.333% - 5.41667em); animation-delay: 2.89484s;"></div><div class="particle" style="left: calc(110% - 5.5em); animation-delay: 2.68664s;"></div><div class="particle" style="left: calc(111.667% - 5.58333em); animation-delay: 2.97843s;"></div><div class="particle" style="left: calc(113.333% - 5.66667em); animation-delay: 2.7375s;"></div><div class="particle" style="left: calc(115% - 5.75em); animation-delay: 1.46074s;"></div><div class="particle" style="left: calc(116.667% - 5.83333em); animation-delay: 3.61936s;"></div><div class="particle" style="left: calc(118.333% - 5.91667em); animation-delay: 0.325207s;"></div><div class="particle" style="left: calc(120% - 6em); animation-delay: 0.588869s;"></div><div class="particle" style="left: calc(121.667% - 6.08333em); animation-delay: 2.95487s;"></div><div class="particle" style="left: calc(123.333% - 6.16667em); animation-delay: 3.4898s;"></div><div class="particle" style="left: calc(125% - 6.25em); animation-delay: 3.4915s;"></div><div class="particle" style="left: calc(126.667% - 6.33333em); animation-delay: 1.73848s;"></div><div class="particle" style="left: calc(128.333% - 6.41667em); animation-delay: 0.104374s;"></div><div class="particle" style="left: calc(130% - 6.5em); animation-delay: 2.59178s;"></div><div class="particle" style="left: calc(131.667% - 6.58333em); animation-delay: 3.38135s;"></div><div class="particle" style="left: calc(133.333% - 6.66667em); animation-delay: 1.43247s;"></div><div class="particle" style="left: calc(135% - 6.75em); animation-delay: 2.77233s;"></div><div class="particle" style="left: calc(136.667% - 6.83333em); animation-delay: 2.67794s;"></div><div class="particle" style="left: calc(138.333% - 6.91667em); animation-delay: 3.05434s;"></div><div class="particle" style="left: calc(140% - 7em); animation-delay: 1.52953s;"></div><div class="particle" style="left: calc(141.667% - 7.08333em); animation-delay: 3.94629s;"></div><div class="particle" style="left: calc(143.333% - 7.16667em); animation-delay: 3.85326s;"></div><div class="particle" style="left: calc(145% - 7.25em); animation-delay: 2.90993s;"></div><div class="particle" style="left: calc(146.667% - 7.33333em); animation-delay: 0.536993s;"></div><div class="particle" style="left: calc(148.333% - 7.41667em); animation-delay: 0.54149s;"></div></div>
+<a href="https://discord.gg/vYrmxByrWq">
+
+<div class="big-pink-btn" style="margin-right: 10px; box-shadow: 2px 2px 5px 2px red; color:red;">Discord 🚀</div>
+</a>
+<a href="/forum/">
+<div class="big-pink-btn-light">Visit Community</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<footer class="home-footer-dark">
+<div style="padding: 12px; opacity: 0.2">
+<span>Copyrighted 2022-2024</span> - <span><a href="/privacy_policy.txt">Privacy</a></span>
+</div>
+</footer>
+</div>
+</div>
+<div id="home-ide" class="notepad-test" style="display: none; max-height: 100%;">
+<div id="cf-turnstile"></div> 
+
+<div class="notepad-top">
+<ul id="lua-sessions">
+</ul>
+<ul id="lua-top-mobile">
+<li style="    
+display: block;
+height: 100%;
+padding: 5px;">
+<div style="
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #252525;
+    border-radius: 12px;
+    padding: 2px;">
+<a href="/" style="position: absolute;">
+<img style="width: 32px; height: 32px; display: inline-block; filter: drop-shadow(1px 1px 3px black);" alt="LuaObfuscator logo" src="/img/logo.png" width="600" height="600">
+</a>
+</div>
+<span style="color: var(--white); margin-left: 42px; margin-top: 5px; position: absolute;"> - LuaObfuscator</span>
+</li>
+</ul>
+
+<div style="display: flex; margin-right: 12px; height: 100%;">
+<form method="POST" action="/forum/OAuth2/Discord">
+<input style="cursor: pointer;" class="pink-btn-light" type="submit" value="Login">
+</form>
+</div>
+
+</div>
+
+<div class="notepad-script">
+<div id="toolbox-download-btn" class="big-pink-btn" style="display: none;">Download</div>
+<div class="notepad-lines">
+<ul id="notepad-lines-ul"></ul>
+</div>
+
+<pre style="display: block;
+    position: relative;
+    display: inline-table;
+    height: 100%;" class="lasm-script">            
+<code id="lua-codewindow" class="lang-lua" contenteditable="true" spellcheck="false" style="filter: blur(0px);"></code></pre>
+<input type="file" id="lua-file" style="display:none">
+</div>
+
+<div id="lua-console" class="notepad-bottom" style="display: none;
+    height: 160px;
+    width: 100%;
+    background-color: #181818;">
+<div style="display: block;
+    width: 100%;
+    height: 100%;
+    /* margin: 3px; */
+    /* padding: 4px; */
+    display: flex;">
+<ul id="lua-console-ul" style="
+    display: flex;
+    width: 100%;
+    color: dimgray;
+    font-family: consolas;
+    background-color: #1E1E1E;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    margin: 5px;
+    border: 1px solid black;
+    border-width: 1px 0 0 0;
+    height: auto;
+    padding: 0px 8px 4px 0px;
+    overflow: auto;
+    flex-direction: column-reverse;
+background: url(/img/noise.png);
+"></ul>
+</div>
+</div>
+</div>
+
+<div id="notepad-toolbox1" class="notepad-toolbox" style="filter: saturate(0.1); display: none;">
+
+<a style="text-decoration: none;" href="/forum"><div class="toolbox-collapsible collapsible-header">Community</div></a>
+<div class="notepad-toolbox-spacer">
+</div>
+
+<div class="toolbox-collapsible">All Actions</div>
+<div class="notepad-toolbox-spacer">
+<span id="lua-cleanup" class="toolbox-button" style="background-color: red;">CLEANUP</span>
+<span id="lua-junkif" class="toolbox-button" style="background-color: lightskyblue;">Junk-If</span>
+<span id="lua-reverseif" class="toolbox-button" style="background-color: lightskyblue;">Reverse-If</span>
+<span id="lua-cffv1" class="toolbox-button" style="background-color: lightskyblue;">CFF v1*</span>
+<span id="lua-encfdec" class="toolbox-button" style="background-color: lightskyblue;">Enc Func Dec</span>
+<span id="lua-swizzle" class="toolbox-button" style="background-color: lightskyblue;">Swizzle</span>
+<span id="lua-literals" class="toolbox-button" style="background-color: lightskyblue;">Literals</span>
+<span id="lua-mbav1" class="toolbox-button" style="background-color: lightskyblue;">MBAv1</span>
+<span id="lua-strings" class="toolbox-button" style="background-color: lightskyblue;">Strings</span>
+<span id="lua-tableindirection" class="toolbox-button" style="background-color: lightskyblue;">Table Indirection</span>
+<span id="lua-bit32" class="toolbox-button" style="background-color: lightskyblue;">Add bit32</span>
+<span id="lua-rmPLH" class="toolbox-button" style="background-color: lightskyblue;">Remove LPH Macros</span>
+<span id="lua-minify" class="toolbox-button" style="background-color: lightskyblue;">Minify*</span>
+<span id="lua-beautify" class="toolbox-button" style="background-color: lightskyblue;">Beautify</span>
+<span id="lua-luamina-push" class="toolbox-button" style="background-color: darkcyan;"><i>Lua</i>mina PUSH</span>
+<span id="lua-luamina-pull" class="toolbox-button" style="background-color: darkcyan;"><i>Lua</i>mina PULL</span>
+<span id="lua-demo_vm" class="toolbox-button" style="background-color: rgb(46, 162, 235);">Demo VM*</span>
+<span id="lua-reset" class="toolbox-button" style="background-color: yellowgreen;">RESET&nbsp;</span>
+<p style="color: indianred; bottom:0px">*Experimental</p>
+</div>
+
+<div class="toolbox-collapsible toolbox-hit">Obfuscation</div>
+<div style="display: block;" class="notepad-toolbox-spacer">
+
+
+<span id="lua-pre-0" class="toolbox-button" style="background-color: darkred;">Dystropic Malevolence</span>
+<span id="lua-pre-1" class="toolbox-button" style="background-color: orangered;">Chaotic Evil</span>
+<span id="lua-pre-2" class="toolbox-button" style="background-color: orange;">Chaotic Good</span>
+
+
+<span id="lua-pre-5" class="toolbox-button" style="font-size: 25px; font-weight: 700; color: darkred; background-color: yellowgreen;">&nbsp;&gt; OBFUSCATE! &lt;</span>
+<span id="lua-pre-3" class="toolbox-button" style="background-color: greenyellow;">Basic Good</span>
+<span id="lua-pre-4" class="toolbox-button" style="background-color: lightgreen;">Basic Minimal </span>
+<span id="lua-beautify3" class="toolbox-button" style="background-color: lightskyblue;">Beautify</span>
+<span style="margin-top: 15px; color:white; text-align: center" id="lua-makesus" class="toolbox-button toolbox-button-rgb"><span style="width: 100%;
+    display: inline-block;
+    line-height: 32px;
+    background: #5c258d;
+    background: -webkit-linear-gradient( to right bottom, #4389a2, #5c258d );
+    background: linear-gradient( to right bottom, #4389a2, #5c258d );
+    border-radius: 25px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}"><img style="float:left" width="32" height="32" src="/img/icons/kindasus.webp">Make Sus<img style="transform: scaleX(-1); float:right;" width="32" height="32" src="/img/icons/kindasus.webp"></span></span>
+
+</div>
+
+<div class="toolbox-collapsible">Miscellaneous</div>
+<div class="notepad-toolbox-spacer">
+<span id="lua-copytoclipboard" class="toolbox-button" style="background-color: lightskyblue;">Copy to clipboard</span>
+<span id="lua-evaluate" class="toolbox-button" style="background-color: lightskyblue;">Evaluate Performance 😳</span>
+<span id="lua-beautify2" class="toolbox-button" style="background-color: lightskyblue;">Beautify</span>
+<span id="lua-minify2" class="toolbox-button" style="background-color: lightskyblue;">Minify</span>
+<span id="lua-undo" class="toolbox-button" style="background-color: mediumpurple;">Undo</span>
+<span id="lua-undoAll" class="toolbox-button" style="background-color: mediumpurple;">Undo ALL</span>
+<span id="lua-reset2" class="toolbox-button" style="background-color: yellowgreen;">RESET&nbsp;</span>
+</div>
+
+
+<div class="toolbox-collapsible" style="color: #ff6969!important">Experimental</div>
+<div class="notepad-toolbox-spacer">
+<span id="lua-variables" class="toolbox-button" style="background-color: lightskyblue;">Locals**</span>
+<span id="lua-glookup" class="toolbox-button" style="background-color: lightskyblue;">_G lookup*</span>
+<span id="lua-cffv1-exp" class="toolbox-button" style="background-color: lightskyblue;">CFF v1*</span>
+<span id="lua-ssa" class="toolbox-button" style="background-color: lightskyblue;">SSA-ish</span>
+<span id="lua-transpile51" class="toolbox-button" style="background-color: lightskyblue;">To lua 5.1</span>
+<span id="lua-const" class="toolbox-button" style="background-color: lightskyblue;">LPH_CONST macro</span>
+<span id="lua-demo_vm-exp" class="toolbox-button" style="background-color: rgb(46, 162, 235);">Demo VM*</span>
+
+
+
+<p style="color: indianred; bottom:0px">*Might break</p>
+<p style="color: indianred; bottom:0px">**Will break</p>
+</div>
+<div class="toolbox-collapsible toolbox-stats">
+<span style="font-size: 26px; line-height: 30px;">
+<svg width="30px" height="30px" viewBox="-9.66 0 103.8 103.8" xmlns="http://www.w3.org/2000/svg">
+<g id="Group_2" data-name="Group 2" transform="translate(-472 -231.9)">
+<path id="Path_47" data-name="Path 47" d="M522.1,246.8H499.3c-11.6,0-21.1,7.6-21.1,15.2" fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></path>
+<line id="Line_22" data-name="Line 22" y1="22.7" transform="translate(551 255.1)" fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></line>
+<path id="Path_48" data-name="Path 48" d="M532.6,233.9H509.8c-11.6,0-21.1,6.7-21.1,15" fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></path>
+<path id="Path_49" data-name="Path 49" d="M534.7,256.7H490.3A16.3,16.3,0,0,0,474,273v44.4a16.3,16.3,0,0,0,16.3,16.3h44.4A16.3,16.3,0,0,0,551,317.4V273A16.3,16.3,0,0,0,534.7,256.7Z" fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></path>
+<path id="Path_50" data-name="Path 50" d="M540.7,242.3a3.567,3.567,0,0,1,4.2,4.2,3.518,3.518,0,0,1-2.8,2.8,3.567,3.567,0,0,1-4.2-4.2A3.518,3.518,0,0,1,540.7,242.3Z" fill="#90ee90" stroke="#90ee90" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path>
+<path id="Path_51" data-name="Path 51" d="M551.2,233.5a3.567,3.567,0,0,1,4.2,4.2,3.518,3.518,0,0,1-2.8,2.8,3.567,3.567,0,0,1-4.2-4.2A3.651,3.651,0,0,1,551.2,233.5Z" fill="#90ee90" stroke="#90ee90" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"></path>
+<line id="Line_23" data-name="Line 23" x2="23.1" transform="translate(491.1 278.8)" fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></line>
+<line id="Line_24" data-name="Line 24" x2="36.1" transform="translate(491.1 295.2)" fill="none" stroke="#90ee90" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"></line>
+</g>
+</svg>0K
+</span>
+</div>
+<div class="notepad-toolbox-spacer">
+<span style="color: lightgreen; font-style: italic;">Total Downloads: 380</span><br>
+<span style="color: lightgreen; font-style: italic;">Total Obfuscations: 397</span>
+</div>
+</div>
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+        let fireContainer = document.getElementById("fire-container");
+        function createParticles(fireContainer, num, leftSpacing) {
+            for (let i = 0; i < num; i += 1) {
+                let particle = document.createElement("div");
+                particle.style.left = `calc((100% - 5em) * ${i / leftSpacing})`;
+                particle.setAttribute("class", "particle");
+                particle.style.animationDelay = 4 * Math.random() + "s";
+                fireContainer.appendChild(particle);
+            }
+        }
+
+        // fire
+        createParticles(fireContainer, 90, 60);
+
+        // cogwheels
+        var wheelA = document.getElementById("cogwheel_a");
+        var wheelB = document.getElementById("cogwheel_b");
+        console.log("wheels: ", wheelA, wheelB)
+        var homescroll = document.getElementById("home-scroll")
+        homescroll.addEventListener("scroll", function () {
+            var value = homescroll.scrollTop * 0.1;
+            console.log(value)
+            wheelA.style.transform = `rotate(${value}deg)`;
+            value = value * 2;
+            wheelB.style.transform = `rotate(-${value}deg)`;
+        });
+
+        
+
+
+            // init turnstile
+            _token = undefined;
+            window.turnstileCallback = function (token) {
+                let waitbanner = document.getElementById("wait-banner");
+                let newfile = document.getElementById("btn-demo");
+                let uploadfile = document.getElementById("btn-uploadfile");
+
+                waitbanner.style.display = "none"
+                newfile.style.cursor = "pointer"
+                uploadfile.style.cursor = "pointer"
+                newfile.disabled = false
+                uploadfile.disabled = false
+                newfile.classList.remove("btn-disabled");
+                uploadfile.classList.remove("btn-disabled");
+
+                _token = token;
+            }
+
+            window.turnstile = {
+                getResponse : function() {
+                    return _token;
+                }
+            }
+
+            setTimeout(function () { window.turnstileCallback("525551555154535351525556565253544952495351575750544950535252535351515551534848505357554950545454494857525554515357565749484851485652515657"); }, 1969) 
+                });
+</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async="" defer=""></script>
+</div>
+<script defer="" src="https://luaobfuscator.com /js/luaEngine.js"></script>
+<script defer="" src="https://luaobfuscator.com/js/index.js"></script>
+<script>
+        var maincontainer = document.getElementsByClassName('main-container')[0];
+        var notepadbody = document.getElementsByClassName('notepad-body')[0];
+        const observer = new MutationObserver(function (mutations, observer) {
+            maincontainer.style.height = "100%";
+            if (notepadbody != null)
+                notepadbody.style.height = "100%";
+        });
+        observer.observe(maincontainer, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
+    </script>
+
+
+</body></html>
